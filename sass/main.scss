@@ -1,0 +1,430 @@
+/*Header, con su respectiva navegación*/
+.main-menu {
+  background-color: black;
+  .nav {
+    .img-logo {
+      height: 100%;
+    }
+    ul {
+      .social-logo {
+        display: flex;
+        text-decoration: none;
+        .social {
+          color: white;
+          margin: auto 5px;
+        }
+      }
+      li {
+        a {
+          position: relative;
+          display: block;
+          font-size: 1.2rem;
+          color: #ecf0f1;
+          text-transform: uppercase;
+          transition: 0.5s;
+          font-weight: 300;
+          letter-spacing: 2.3px;
+          &:hover {
+            color: #dab783;
+            &:after {
+              transform: scaleX(1);
+              transform-origin: left;
+            }
+          }
+          &:after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 3px;
+            top: 100%;
+            left: 0;
+            background: #dab783;
+            transition: transform 0.5s;
+            transform: scaleX(0);
+            transform-origin: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Parte principal de la página, todo su contenido */
+main {
+  .first-part {
+    background-color: black;
+    padding: 20px;
+    .white-text-first {
+      color: white;
+      .logo-lamarca {
+        margin-bottom: 25px;
+        border: 1px #fff;
+        border-style: none none dashed ridge;
+        padding: 15px;
+      }
+    }
+  }
+  .second-part {
+    .images {
+      position: relative;
+      .asset-bg {
+        position: absolute;
+        width: 55%;
+        left: 22%;
+        top: -125px;
+      }
+      .asset-person {
+        position: absolute;
+        left: 42%;
+        width: 180px;
+        top: 25px;
+      }
+      .img-text {
+        position: absolute;
+        width: 65%;
+        left: 20%;
+        top: 120px;
+      }
+    }
+  }
+  .third-part {
+    margin-top: 60%;
+    position: relative;
+    .text-lorem {
+      text-align: right;
+      padding-top: 50px;
+      letter-spacing: 3px;
+    }
+    .asset {
+      padding-left: 50px;
+    }
+  }
+  .four-part {
+    background-image: url("../prueba-font-end/la-marca-cortar-assets/bg-asset-2.png ");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    .white-text-third {
+      p {
+        color: white;
+        margin: 5rem auto;
+        width: 80%;
+        padding-left: 6rem;
+      }
+    }
+  }
+  .five-part {
+    position: relative;
+    padding: 90px 0;
+    .img-boy-calling {
+      position: absolute;
+      top: -260px;
+      left: 5%;
+    }
+  }
+  .six-part {
+    position: relative;
+    margin-top: 150px;
+    h2 {
+      letter-spacing: 4.4px;
+      font-weight: 300;
+    }
+    .general-text-subscribe {
+      letter-spacing: 2px;
+    }
+    .text-error {
+      display: none;
+    }
+    .input-form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .inputs {
+        margin: 5px 0;
+        padding: 5px 0;
+        background-color: #d5d3d3;
+        width: 48%;
+        border: 0;
+      }
+      .label-checkbox {
+        text-decoration: none;
+        line-height: 2.7;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: black;
+      }
+      .button-submit {
+        background-color: #eabf8a;
+        border: 0;
+      }
+    }
+  }
+}
+
+/*Parte final de la página*/
+footer {
+  padding: 25px;
+  background-color: black;
+  color: white;
+  letter-spacing: 5px;
+}
+
+/*Funcionamiento erroneo del formulario*/
+.incorrect {
+  border: solid 3px red;
+}
+.text-error-active {
+  display: list-item;
+  list-style: none;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 767px) {
+  .main-menu {
+    .nav {
+      .navbar-brand {
+        width: 70%;
+      }
+      .img-logo {
+        width: 100%;
+      }
+      .navbar-toggler {
+        background-color: white !important;
+      }
+      ul {
+        .social-logo {
+          display: none;
+        }
+      }
+    }
+  }
+  main {
+    .first-part {
+      .white-text-first {
+        .logo-lamarca {
+          width: 100%;
+        }
+      }
+    }
+    .second-part {
+      .images {
+        .asset-bg {
+          position: relative;
+          width: 100%;
+          margin-top: 20%;
+          left: 0;
+          top: 0;
+        }
+        .asset-person {
+          left: 30%;
+          width: 35%;
+          top: 20%;
+        }
+        .img-text {
+          width: 100%;
+          left: 0;
+          top: 35%;
+        }
+      }
+    }
+    .third-part {
+      margin-top: 25%;
+      margin-bottom: 25px;
+      .text-lorem {
+        text-align: left;
+      }
+    }
+    .four-part {
+      background-size: cover;
+      padding: 40px 0;
+      margin-top: 40px;
+      .white-text-third {
+        p {
+          padding: 0;
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+    .five-part {
+      padding: 0;
+      .img-boy-calling {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+    .six-part {
+      margin-top: 50px;
+      top: 0;
+      .input-form {
+        .inputs {
+          width: 100%;
+        }
+        .button-submit {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-menu {
+    .nav {
+      .navbar-toggler {
+        background-color: white !important;
+      }
+      ul {
+        .social-logo {
+          display: none;
+        }
+      }
+    }
+  }
+
+  main {
+    .second-part {
+      .images {
+        .img-text {
+          width: 100%;
+          left: 0%;
+        }
+        .asset-bg {
+          width: 100%;
+          left: 0;
+          top: -125px;
+        }
+      }
+    }
+    .third-part {
+      margin-top: 85%;
+    }
+    .four-part {
+      background-size: cover;
+      padding: 40px 0;
+      margin-top: 40px;
+      .white-text-third {
+        p {
+          margin: 0;
+          width: 100%;
+          padding-left: 0;
+        }
+      }
+    }
+    .five-part {
+      .img-boy-calling {
+        top: -40%;
+        left: 5%;
+        width: 45%;
+      }
+    }
+    .six-part {
+      margin-top: 50px;
+      top: 0;
+      .input-form {
+        .button-submit {
+          padding: 10px;
+          width: 100%;
+        }
+        .inputs {
+          width: 48%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-menu {
+    .nav {
+      ul {
+        li {
+          a {
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .second-part {
+      .images {
+        .img-text {
+          width: 100%;
+          left: 0%;
+        }
+        .asset-bg {
+          width: 70%;
+          left: 15%;
+        }
+      }
+    }
+    .third-part {
+      margin-top: 65%;
+    }
+    .four-part {
+      background-size: cover;
+      padding: 40px 0;
+      margin-top: 40px;
+      .white-text-third {
+        p {
+          margin: 0;
+          width: 100%;
+          padding-left: 0;
+        }
+      }
+    }
+    .five-part {
+      .img-boy-calling {
+        top: -45%;
+        left: 5%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  main {
+    .five-part {
+      .img-boy-calling {
+        left: 10%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-menu {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    border-bottom: 1px solid;
+    .nav {
+      padding-bottom: 0 !important;
+      .navbar-brand {
+        border-bottom: 3px solid #dab783;
+      }
+      .social-media {
+        justify-content: flex-end;
+      }
+    }
+  }
+  main {
+    .four-part {
+      background-size: cover;
+      padding: 40px 0;
+      margin-top: 40px;
+    }
+  }
+}

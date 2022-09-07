@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/*Header, con su respectiva navegación*/
+.main-menu {
+  background-color: black; }
+  .main-menu .nav .img-logo {
+    height: 100%; }
+  .main-menu .nav ul .social-logo {
+    display: flex;
+    text-decoration: none; }
+    .main-menu .nav ul .social-logo .social {
+      color: white;
+      margin: auto 5px; }
+  .main-menu .nav ul li a {
+    position: relative;
+    display: block;
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-weight: 300;
+    letter-spacing: 2.3px; }
+    .main-menu .nav ul li a:hover {
+      color: #dab783; }
+      .main-menu .nav ul li a:hover:after {
+        transform: scaleX(1);
+        transform-origin: left; }
+    .main-menu .nav ul li a:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 3px;
+      top: 100%;
+      left: 0;
+      background: #dab783;
+      transition: transform 0.5s;
+      transform: scaleX(0);
+      transform-origin: right; }
+
+/*Parte principal de la página, todo su contenido */
+main .first-part {
+  background-color: black;
+  padding: 20px; }
+  main .first-part .white-text-first {
+    color: white; }
+    main .first-part .white-text-first .logo-lamarca {
+      margin-bottom: 25px;
+      border: 1px #fff;
+      border-style: none none dashed ridge;
+      padding: 15px; }
+
+main .second-part .images {
+  position: relative; }
+  main .second-part .images .asset-bg {
+    position: absolute;
+    width: 55%;
+    left: 22%;
+    top: -125px; }
+  main .second-part .images .asset-person {
+    position: absolute;
+    left: 42%;
+    width: 180px;
+    top: 25px; }
+  main .second-part .images .img-text {
+    position: absolute;
+    width: 65%;
+    left: 20%;
+    top: 120px; }
+
+main .third-part {
+  margin-top: 60%;
+  position: relative; }
+  main .third-part .text-lorem {
+    text-align: right;
+    padding-top: 50px;
+    letter-spacing: 3px; }
+  main .third-part .asset {
+    padding-left: 50px; }
+
+main .four-part {
+  background-image: url("../prueba-font-end/la-marca-cortar-assets/bg-asset-2.png ");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 40px; }
+  main .four-part .white-text-third p {
+    color: white;
+    margin: 5rem auto;
+    width: 80%;
+    padding-left: 6rem; }
+
+main .five-part {
+  position: relative;
+  padding: 90px 0; }
+  main .five-part .img-boy-calling {
+    position: absolute;
+    top: -260px;
+    left: 5%; }
+
+main .six-part {
+  position: relative;
+  margin-top: 150px; }
+  main .six-part h2 {
+    letter-spacing: 4.4px;
+    font-weight: 300; }
+  main .six-part .general-text-subscribe {
+    letter-spacing: 2px; }
+  main .six-part .text-error {
+    display: none; }
+  main .six-part .input-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    main .six-part .input-form .inputs {
+      margin: 5px 0;
+      padding: 5px 0;
+      background-color: #d5d3d3;
+      width: 48%;
+      border: 0; }
+    main .six-part .input-form .label-checkbox {
+      text-decoration: none;
+      line-height: 2.7;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: black; }
+    main .six-part .input-form .button-submit {
+      background-color: #eabf8a;
+      border: 0; }
+
+/*Parte final de la página*/
+footer {
+  padding: 25px;
+  background-color: black;
+  color: white;
+  letter-spacing: 5px; }
+
+/*Funcionamiento erroneo del formulario*/
+.incorrect {
+  border: solid 3px red; }
+
+.text-error-active {
+  display: list-item;
+  list-style: none;
+  text-align: center;
+  text-decoration: underline; }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 767px) {
+  .main-menu .nav .navbar-brand {
+    width: 70%; }
+  .main-menu .nav .img-logo {
+    width: 100%; }
+  .main-menu .nav .navbar-toggler {
+    background-color: white !important; }
+  .main-menu .nav ul .social-logo {
+    display: none; }
+  main .first-part .white-text-first .logo-lamarca {
+    width: 100%; }
+  main .second-part .images .asset-bg {
+    position: relative;
+    width: 100%;
+    margin-top: 20%;
+    left: 0;
+    top: 0; }
+  main .second-part .images .asset-person {
+    left: 30%;
+    width: 35%;
+    top: 20%; }
+  main .second-part .images .img-text {
+    width: 100%;
+    left: 0;
+    top: 35%; }
+  main .third-part {
+    margin-top: 25%;
+    margin-bottom: 25px; }
+    main .third-part .text-lorem {
+      text-align: left; }
+  main .four-part {
+    background-size: cover;
+    padding: 40px 0;
+    margin-top: 40px; }
+    main .four-part .white-text-third p {
+      padding: 0;
+      width: 100%;
+      margin: 0; }
+  main .five-part {
+    padding: 0; }
+    main .five-part .img-boy-calling {
+      position: relative;
+      top: auto;
+      left: auto;
+      display: block;
+      margin: 0 auto;
+      width: 100%; }
+  main .six-part {
+    margin-top: 50px;
+    top: 0; }
+    main .six-part .input-form .inputs {
+      width: 100%; }
+    main .six-part .input-form .button-submit {
+      width: 100%;
+      padding: 10px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-menu .nav .navbar-toggler {
+    background-color: white !important; }
+  .main-menu .nav ul .social-logo {
+    display: none; }
+  main .second-part .images .img-text {
+    width: 100%;
+    left: 0%; }
+  main .second-part .images .asset-bg {
+    width: 100%;
+    left: 0;
+    top: -125px; }
+  main .third-part {
+    margin-top: 85%; }
+  main .four-part {
+    background-size: cover;
+    padding: 40px 0;
+    margin-top: 40px; }
+    main .four-part .white-text-third p {
+      margin: 0;
+      width: 100%;
+      padding-left: 0; }
+  main .five-part .img-boy-calling {
+    top: -40%;
+    left: 5%;
+    width: 45%; }
+  main .six-part {
+    margin-top: 50px;
+    top: 0; }
+    main .six-part .input-form .button-submit {
+      padding: 10px;
+      width: 100%; }
+    main .six-part .input-form .inputs {
+      width: 48%; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-menu .nav ul li a {
+    font-size: 1rem;
+    letter-spacing: 0.3px; }
+  main .second-part .images .img-text {
+    width: 100%;
+    left: 0%; }
+  main .second-part .images .asset-bg {
+    width: 70%;
+    left: 15%; }
+  main .third-part {
+    margin-top: 65%; }
+  main .four-part {
+    background-size: cover;
+    padding: 40px 0;
+    margin-top: 40px; }
+    main .four-part .white-text-third p {
+      margin: 0;
+      width: 100%;
+      padding-left: 0; }
+  main .five-part .img-boy-calling {
+    top: -45%;
+    left: 5%; } }
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  main .five-part .img-boy-calling {
+    left: 10%; } }
+
+@media only screen and (min-width: 992px) {
+  .main-menu {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    border-bottom: 1px solid; }
+    .main-menu .nav {
+      padding-bottom: 0 !important; }
+      .main-menu .nav .navbar-brand {
+        border-bottom: 3px solid #dab783; }
+      .main-menu .nav .social-media {
+        justify-content: flex-end; }
+  main .four-part {
+    background-size: cover;
+    padding: 40px 0;
+    margin-top: 40px; } }
